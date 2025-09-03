@@ -45,6 +45,7 @@ public class Celular extends DecoratorAgregado {
 	 */
 	@Override
 	public String toString() {
+		// ERROR: La tarifa del celular varía respecto a la cantidad de líneas
 		return this.getContratable().toString() + " + CELULAR: $300 x " +this.getCantLineas();
 	}
 
@@ -90,6 +91,7 @@ public class Celular extends DecoratorAgregado {
 	@Override
 	public Object clone() {
 		Celular celularClonado;
+		// ERROR: falta un try/catch por contrato
 		celularClonado=(Celular) super.clone();
 		return celularClonado;
 	}

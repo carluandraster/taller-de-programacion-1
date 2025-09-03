@@ -109,6 +109,7 @@ public abstract class DecoratorAgregado implements I_Contratable {
 	public Object clone() {
 		DecoratorAgregado agregadoClonado=null;
 		try {
+			// ERROR: La clonación es superficial, no profunda
 			agregadoClonado=(DecoratorAgregado) super.clone();
 		} catch (CloneNotSupportedException e) {
 			// TODO Auto-generated catch block
