@@ -13,8 +13,7 @@ public class TestConversor {
 		try {
 			Assert.assertEquals("La conversion no se hizo correctamente", c.letranum("1234.45"), "Mil doscientos treinta y cuatro pesos con 45 centavos");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 	}
 
