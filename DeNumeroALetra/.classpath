@@ -5,5 +5,5 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 	<classpathentry kind="lib" path="lib/junit-4.12.jar"/>
-	<clsspathentry kibd="test" path="test"/>
+	<clsspathentry kind="test" path="src/test"/>
 </classpath>
