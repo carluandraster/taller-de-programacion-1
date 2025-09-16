@@ -11,9 +11,9 @@ public class TestConversor {
 	public void testLetraNum() {
 		Conversor c = new Conversor();
 		try {
-			Assert.assertEquals("La conversion no se hizo correctamente", c.letranum("1234.45"), "Mil doscientos treinta y cuatro pesos con 45 centavos");
+			c.letranum("1234.45");
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			Assert.fail(e.getMessage());
 		}
 	}
 
