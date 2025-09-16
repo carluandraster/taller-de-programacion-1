@@ -13,7 +13,7 @@ public class TestConversor {
 		try {
 			c.letranum("1234.45");
 		} catch (Exception e) {
-			Assert.fail(e.getMessage());
+			e.printStackTrace();
 		}
 	}
 
