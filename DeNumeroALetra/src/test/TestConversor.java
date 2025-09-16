@@ -1,6 +1,5 @@
 package test;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import modelo.Conversor;
