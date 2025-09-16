@@ -105,7 +105,7 @@ public class Conversor {
 		}
 	 }
 
-	/* Método letranum
+	/** Método letranum
 	 * Argumento de Entrada un String con una cifra de 15 digitos enteros y dos decimales separados
 	por un punto.
 	 * La entrada es validada y si es incorrecta se lanza una excepción.
