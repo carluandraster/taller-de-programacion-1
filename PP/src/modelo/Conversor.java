@@ -70,7 +70,7 @@ public class Conversor {
 								d = (int) b[i].charAt(1) - 48; // ERROR para b[4]
 								Letra1 = Letra1 + " " + Decenas[d];
 								d = (int) b[i].charAt(2) - 48; // ERROR para b[4]
-								if (b[i].charAt(2) != '0')// ERROR para b[4]
+								if (b[i].charAt(2) != '0') // ERROR para b[4]
 								{
 									Letra1 = Letra1 + " Y " + Unidades[d];
 								}
