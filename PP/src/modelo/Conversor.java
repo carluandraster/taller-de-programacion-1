@@ -18,7 +18,7 @@ public class Conversor {
 	 * Precondición: El argumento de entrada representa una cifra entera y valida.
 	 * Postcondición: No existe.
 	 */
-	 private String LETRA(String a)
+	 public String LETRA(String a) // Este es un método privado pero lo puse en público para testear
 	 {
 		Boolean paso = a.matches("[0-9]{1,15}.[0-9]{2}");
 		if (paso)
