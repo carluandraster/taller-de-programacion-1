@@ -12,7 +12,7 @@ public class TestConversor {
 		try {
 			c.letranum("1234.45");
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			// System.out.println(e.getMessage());
 		}
 	}
 
