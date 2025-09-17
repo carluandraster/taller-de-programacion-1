@@ -48,7 +48,7 @@ public class Conversor {
 				a.replace(' ', '0'); // EROR: si el argumento de entrada representa una cifra entera y valida, entonces no tiene espacios
 				for (i=0; i<4; i++)
 				{
-					b[i] = a.substring(i * 3, i*3 + 3);
+					b[i] = a.substring(i * 3, i*3 + 3); // Longitud de b[i] = i*3+3-i*3 = 3
 				}
 				// b[4] = ""
 				Letra1 = "";
@@ -63,13 +63,13 @@ public class Conversor {
 								digito = (int) b[i].charAt(0) - 47; // Mismo error que arriba
 								Letra1 = Letra1 + " " + Centenas[digito ];
 							}
-							d = Integer.valueOf(b[i].substring(1,3));
+							d = Integer.valueOf(b[i].substring(1,3)); // ERROR para b[4]
 							if (d>31)
 							{
-								d = (int) b[i].charAt(1) - 48;
+								d = (int) b[i].charAt(1) - 48; // ERROR para b[4]
 								Letra1 = Letra1 + " " + Decenas[d];
-								d = (int) b[i].charAt(2) - 48;
-								if (b[i].charAt(2) != '0')
+								d = (int) b[i].charAt(2) - 48; // ERROR para b[4]
+								if (b[i].charAt(2) != '0')// ERROR para b[4]
 								{
 									Letra1 = Letra1 + " Y " + Unidades[d];
 								}
