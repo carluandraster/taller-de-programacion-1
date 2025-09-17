@@ -59,10 +59,10 @@ public class Conversor {
 						{
 							if (b[i].charAt(0) != '0') // ERROR: inicialmente b[i] es un String vacío por lo que no sería posible acceder a su caracter 0. Se lanza IndexOutOfBoundsException y ni siquiera hay un try/catch para remediarlo
 							{
-								digito = (int) b[i].charAt(0) - 47;
+								digito = (int) b[i].charAt(0) - 47; // Mismo error que arriba
 								Letra1 = Letra1 + " " + Centenas[digito ];
 							}
-							d = Integer.valueOf(b[i].substring(1,3));
+							d = Integer.valueOf(b[i].substring(1,3)); // ERROR: b[i] inicialmente es String vacío
 							if (d>31)
 							{
 								d = (int) b[i].charAt(1) - 48;
