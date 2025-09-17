@@ -15,10 +15,4 @@ public class TestConversor {
 			// System.out.println(e.getMessage());
 		}
 	}
-
-	@Test
-	public void testLETRA() {
-		Conversor c = new Conversor();
-		System.out.println(c.LETRA("1234"));
-	}
 }
