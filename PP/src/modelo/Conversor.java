@@ -53,9 +53,9 @@ public class Conversor {
 				Letra1 = "";
 				for (i=0; i<5; i++)
 				{
-					if (!b[i].toString().equals("000"))
+					if (!b[i].toString().equals("000")) // ERROR: no es necesario llamar al método toString
 					{
-						if (!b[i].toString().equals("100"))
+						if (!b[i].toString().equals("100")) // ERROR: no es necesario llamar al método toString
 						{
 							if (b[i].charAt(0) != '0')
 							{
