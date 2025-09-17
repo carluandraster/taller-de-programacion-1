@@ -128,19 +128,19 @@ public class Conversor {
 			DECIMAL = Espacios.substring(0,13) + DECIMAL;
 			if (Integer.valueOf(ENTERO)<2)
 			{
-				SALIDA = LETRA(ENTERO) + "PESO CON";
+				SALIDA = LETRA(ENTERO) + "PESO CON"; // ERROR: no se agregan espacios
 			}
 			else
 			{
-				SALIDA = LETRA(ENTERO) + "PESOS CON";
+				SALIDA = LETRA(ENTERO) + "PESOS CON"; // ERROR: no se agregan espacios
 			}
 			if (Integer.valueOf(DECIMAL)==2)
 			{
-				SALIDA = SALIDA + LETRA(DECIMAL) + "CENTAVO";
+				SALIDA = SALIDA + LETRA(DECIMAL) + "CENTAVO"; // ERROR: no se agregan espacios
 			}
 			else
 			{
-				SALIDA = SALIDA + LETRA(DECIMAL) + "CENTAVOS";
+				SALIDA = SALIDA + LETRA(DECIMAL) + "CENTAVOS"; // ERROR: no se agregan espacios
 			}
 			return SALIDA;
 		}
