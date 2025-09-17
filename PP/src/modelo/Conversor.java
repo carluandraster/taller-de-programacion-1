@@ -57,7 +57,7 @@ public class Conversor {
 					{
 						if (!b[i].toString().equals("100")) // ERROR: no es necesario llamar al método toString
 						{
-							if (b[i].charAt(0) != '0')
+							if (b[i].charAt(0) != '0') // ERROR: inicialmente b[i] es un String vacío por lo que no sería posible acceder a su caracter 0. Se lanza IndexOutOfBoundsException y ni siquiera hay un try/catch para remediarlo
 							{
 								digito = (int) b[i].charAt(0) - 47;
 								Letra1 = Letra1 + " " + Centenas[digito ];
