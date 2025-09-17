@@ -20,7 +20,7 @@ public class Conversor {
 	 */
 	 public String LETRA(String a) // Este es un método privado pero lo puse en público para testear
 	 {
-		Boolean paso = a.matches("[0-9]{1,15}.[0-9]{2}");
+		Boolean paso = a.matches("[0-9]{1,15}.[0-9]{2}"); // ERROR: esto siempre da falso porque la precondición es que es un número entero
 		if (paso)
 		{
 			String Letra1 ="";
