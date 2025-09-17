@@ -16,4 +16,9 @@ public class TestConversor {
 		}
 	}
 
+	@Test
+	public void testLETRA() {
+		Conversor c = new Conversor();
+		System.out.println(c.LETRA("1234"));
+	}
 }
