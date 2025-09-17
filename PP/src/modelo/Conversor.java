@@ -49,6 +49,7 @@ public class Conversor {
 				for (i=0; i<4; i++)
 				{
 					b[i] = a.substring(i * 3, i*3 + 3); // Longitud de b[i] = i*3+3-i*3 = 3
+					// Acá 
 				}
 				// b[4] = ""
 				Letra1 = "";
