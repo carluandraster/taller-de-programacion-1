@@ -49,7 +49,7 @@ public class Conversor {
 				for (i=0; i<4; i++)
 				{
 					b[i] = a.substring(i * 3, i*3 + 3); // Longitud de b[i] = i*3+3-i*3 = 3
-					// Acá 
+					// ERROR: acá no se controla la longitud de a, por lo que existe la posibilidad de que se arroje un IndexOutOfBoundsException
 				}
 				// b[4] = ""
 				Letra1 = "";
