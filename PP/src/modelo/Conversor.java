@@ -50,6 +50,7 @@ public class Conversor {
 				{
 					b[i] = a.substring(i * 3, i*3 + 3);
 				}
+				// b[4] = ""
 				Letra1 = "";
 				for (i=0; i<5; i++)
 				{
@@ -57,9 +58,9 @@ public class Conversor {
 					{
 						if (!b[i].toString().equals("100")) // ERROR: no es necesario llamar al método toString
 						{
-							if (b[i].charAt(0) != '0')
+							if (b[i].charAt(0) != '0') // ERROR porque b[4] es un String vacío y, por ende, no es posible acceder a su caracter 0
 							{
-								digito = (int) b[i].charAt(0) - 47;
+								digito = (int) b[i].charAt(0) - 47; // Mismo error que arriba
 								Letra1 = Letra1 + " " + Centenas[digito ];
 							}
 							d = Integer.valueOf(b[i].substring(1,3));
